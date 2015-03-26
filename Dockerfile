@@ -39,11 +39,6 @@ RUN mkdir /notebooks
 VOLUME /notebooks
 WORKDIR /notebooks
 
-
-VOLUME ["/ipy"]
-
 EXPOSE 8888
 #CMD ipython notebook --no-browser --ip=0.0.0.0 --port 8888
 CMD IPYTHON_OPTS="notebook --no-browser --ip=0.0.0.0 --port 8888" /usr/local/spark/bin/pyspark
-
-#apt-get -y install python wget python-pip python-dev build-essential
