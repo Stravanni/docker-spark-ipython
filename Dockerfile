@@ -7,6 +7,8 @@ RUN apt-get -y install pandoc python supervisor wget python-pip python-dev build
 
 RUN pip install pip --upgrade
 RUN pip2.7 install ipython[notebook]
+RUN pip2.7 install -U nltk
+RUN pip2.7 install pandas
 
 RUN sudo apt-get -y install openjdk-7-jre
 
